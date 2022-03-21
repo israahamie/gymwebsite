@@ -1,0 +1,254 @@
+:root {
+  --dark: black;
+  --light: #ddd;
+  --Color: #00cab1;
+}
+
+* {
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  /*set background image*/
+  /* <a href='https://www.freepik.com/photos/fitness-equipment'>Fitness equipment photo created by snowing - www.freepik.com</a> */
+  background: url(https://img.freepik.com/free-photo/exercise-weights-iron-dumbbell-with-extra-plates_1423-223.jpg?t=st=1647821941~exp=1647822541~hmac=8a5420e691cfee93362262fab85fe657719c356d7907f31f7e8f4190dc789882&w=1380);
+}
+.intro {
+  display: flex;
+  flex-direction: row;
+  color: var(--light);
+  width: 90%;
+  margin-top: 0;
+  box-shadow: 5px -5px 5px var(--dark);
+}
+.intro-img {
+  background-color: var(--dark);
+  background-size: cover;
+  flex: 10;
+  opacity: 0.8;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--light);
+}
+.vertical-navbar {
+  flex: 1;
+  background-color: #010203;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: bolder;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  justify-content: center;
+  align-content: center;
+}
+.vertical-navbar a {
+  color: var(--light);
+  padding: 1em;
+  text-decoration: none;
+  text-align: center;
+}
+.about {
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--dark);
+  color: var(--Color);
+  width: 90%;
+  margin: 2rem;
+  margin-bottom: 0;
+  box-shadow: 5px -5px 5px var(--light);
+}
+h3 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+p {
+  max-width: 40em;
+  font-size: 2rem;
+}
+.intro p {
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 0;
+  font-size: 2em;
+}
+.intro h1 {
+  font-size: 7rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.reserve {
+  background-color: var(--dark);
+  color: var(--Color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 2rem;
+  margin-bottom: 0;
+  box-shadow: 5px -5px 5px var(--light);
+}
+.reserve-title {
+  background-color: var(--dark);
+  opacity: 0.8;
+  flex: 1;
+}
+.reserve-title p {
+  font-size: 3rem;
+  font-weight: lighter;
+}
+.calendar {
+  padding: 1em;
+  background-color: var(--dark);
+  opacity: 1;
+  flex: 1;
+}
+.pay {
+  opacity: 0.8;
+  width: 90%;
+  margin: 2rem;
+  margin-bottom: 0;
+  box-shadow: 5px -5px 5px var(--light);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-color: var(--dark);
+  color: var(--Color);
+}
+.pay h1 {
+  font-size: 4rem;
+  font-style: italic;
+}
+.method,
+.time {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+.method-title,
+.time-title {
+  margin-bottom: 2rem;
+}
+.method-container,
+.time-container {
+  display: flex;
+  flex-direction: row;
+}
+.left-cash,
+.right-card,
+.left-session,
+.mid-month,
+.right-year {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid var(--color);
+}
+.card-title,
+.cash-title,
+.mid-month-title,
+.left-session-title,
+.right-year-title {
+  margin-right: 0.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.year-title,
+.month-title,
+.session-title {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+.right-year-cost,
+.left-session-cost,
+.mid-month-cost {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.left-cash {
+  flex: 1;
+}
+.right-card {
+  flex: 1;
+}
+.left-session {
+  flex: 1;
+}
+
+.mid-month {
+  flex: 1;
+}
+.right-year {
+  flex: 1;
+}
+#contact {
+  background-color: var(--dark);
+  width: 90%;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--light);
+  text-align: center;
+}
+.contact-title {
+  align-content: center;
+}
+.contact-desc {
+  max-width: 30em;
+  text-align: center;
+}
+.phone,
+.email {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.phone-icon,
+.email-icon {
+  margin-right: 0.2rem;
+}
+.email-link {
+  text-align: center;
+}
+#my-mail {
+  text-decoration: none;
+  color: var(--Color);
+}
+
+/*for mobile devices*/
+@media screen and (max-width: 480px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+  }
+  .time-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
